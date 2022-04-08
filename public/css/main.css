@@ -1,0 +1,159 @@
+
+body{
+    background-image:url("../img/login.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:calc(100% -60px);
+    overflow:auto;
+
+}
+.welcomecontainer{
+
+    padding-left: 50px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+.welcomecontainer span{
+    color:black;
+    text-transform: uppercase;
+    display: block;
+}
+.welcometext1{
+    font-size: 60px;
+    font-weight: 700px;
+    letter-spacing: 8px;
+    position: relative;
+    animation: text 3s 1;
+    padding-bottom: 10px;
+
+}
+@keyframes text{
+
+    30%{
+        letter-spacing: 25px;
+    }
+    85%{
+        letter-spacing: 8px;
+    }
+}
+.loginlink{
+    font-family:consolas;
+    position:relative;
+    display: inline-block;
+    color:#2196f3;
+    text-decoration: none;
+    font-size: 25px;
+    overflow: hidden;
+    transition: 0.2s;
+
+}
+.loginlink:hover{
+    color:#255784;
+    background:#2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f2;
+    transition-delay: 1s;
+}
+.loginlink span{
+    position:absolute;
+    display: block;
+}
+.loginlink span:nth-child(1){
+    top:0;
+    left:-100%;
+    width:100%;
+    height:2px;
+    background:linear-gradient(90deg,transparent,#2196f3)
+}
+.loginlink:hover span:nth-child(1){
+    left:100%;
+    transition:1s;
+}
+.loginlink span:nth-child(3){
+    bottom:0;
+    right:-100%;
+    width:100%;
+    height:2px;
+    background:linear-gradient(270deg,transparent,#2196f3)
+}
+.loginlink:hover span:nth-child(3){
+    right:100%;
+    transition:1s;
+    transition-delay: 0.5s;
+}
+.loginlink span:nth-child(2){
+    top:-100%;
+    right:0;
+    width:2px;
+    height:100%;
+    background:linear-gradient(180deg,transparent,#2196f3)
+}
+.loginlink:hover span:nth-child(2){
+    top:100%;
+    transition:1s;
+    transition-delay: 0.25s;
+}
+.loginlink span:nth-child(4){
+    bottom:-100%;
+    left:0;
+    width:2px;
+    height:100%;
+    background:linear-gradient(360deg,transparent,#2196f3)
+}
+.loginlink:hover span:nth-child(4){
+    bottom:100%;
+    transition:1s;
+    transition-delay: 0.75s;
+}
+
+.loginbox{
+    width: 400px;
+    height:350px;
+    padding:40px;
+    position:absolute;
+    top:50%;
+    left:50%;
+
+    background-color: rgba(44,62,80,0.7);
+    transform:translate(-50%,-50%);
+    text-align: center;
+}
+.loginbox input[type="text"],.loginbox input[type="password"]{
+    border:0;
+    background:none;
+    display:block;
+    margin:20px auto;
+    text-align: center;
+    border: 2px solid #3498db;
+    padding:14px 10px;
+    width:200px;
+    outline:none;
+    font-size: 20px;
+    color:white;
+    font-weight: 20px;
+    border-radius: 24px;
+}
+.loginbox input[type="text"]:focus,.loginbox input[type="password"]:focus{
+    width: 280px;
+    border-color:#2ecc71;
+}
+.loginbox input[type="submit"]{
+    border:0;
+    background:none;
+    display:block;
+    margin:20px auto;
+    text-align: center;
+    border: 2px solid #2ecc71;
+    padding:14px 40px;
+    width:200px;
+    outline:none;
+    color:white;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor:pointer;
+}
+.loginbox input[type="submit"]:hover{
+    background:#2ecc71;
+}
